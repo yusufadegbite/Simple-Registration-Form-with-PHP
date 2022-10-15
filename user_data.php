@@ -13,7 +13,15 @@ if(isset($_POST['submit'])){
  fputcsv($file, $data);
  fclose($file);
 
-  echo 'Registration Succesfull!';
+  echo 'Registration Succesfull!' . "<br>";
+  print_r($name);
+  echo '<br>';
+  print_r($email);
+  echo '<br>';
+  print_r($date);
+  echo '<br>';
+  print_r($gender);
+
 
 }else{
    echo "no data";
